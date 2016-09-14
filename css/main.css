@@ -1133,10 +1133,15 @@ section strong{
   top: -20px;
   height: 100px;
   background: rgba(39,128,123, 1);
+  
 }
 
 #header.small .header-content{
   height: 100px;
+}
+
+#header.small .social, #header.small .header-navigation{
+  margin-top: 20px;
 }
 
 #header.small.menu{
@@ -1203,7 +1208,7 @@ section#intro .intro-wrap .intro-content>header p {
 
 section#intro .about-link{
   position: absolute;
-  bottom: 94px;
+  bottom: 150px;
   left: 50%;
   width: 274px;
   margin-left: -137px;
@@ -1391,8 +1396,30 @@ section#ecology >ul >li{
   flex: 0 1 350px;
 }
 
+section#ecology >ul >li article input{
+  display: none;
+}
+
+section#ecology >ul >li article label{
+  display: block;
+  text-align: center;
+}
+
+section#ecology >ul >li article label span{
+  border-bottom: 1px solid  rgba(0, 0, 0, 0.30000000000000004);
+}
+
+section#ecology >ul >li article .content{
+  display: none;
+  transition: 0.4s;
+}
+
+section#ecology >ul >li article input:checked+.content{
+  display: block;
+}
+
 section#ecology >ul >li article header{
-  margin-bottom: 40px;
+  height: 450px;
 }
 
 section#ecology >ul >li article header h2{
@@ -1713,12 +1740,20 @@ section#interiors h1{
 section#interiors .photo{
   display: block;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 section#interiors .photo span{
   border: 0 !important;
   box-shadow: none !important;
+}
+
+section#interiors .photo span[style="height: 640px;"]{
+  overflow: hidden;
+}
+
+section#interiors .photo span[data-pin-log="embed_user_ft"]{
+  display: none;
 }
 
 section#interiors .photo>span {}
@@ -1731,7 +1766,7 @@ section#interiors .links{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 108px 0 196px 0;
+  margin: 0 0 196px 0;
   padding: 0 200px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
