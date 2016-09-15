@@ -904,7 +904,8 @@ textarea {
 }
 
 html {
-    font-size: 62.5%;
+    /*font-size: 62.5%;*/
+    font-size: 10px;
     height: 100%;
     overflow-y: scroll;
     font-family: GothamProRegular, Arial, sans-serif;
@@ -923,6 +924,7 @@ body{
 }
 
 section{
+  display: block;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -1244,11 +1246,12 @@ section#tips{
   background: #fff;
   height: 850px;
   color: #000;
+  padding-top: 227px;
 }
 
 section#tips ol{
   padding: 0;
-  margin: 227px auto 0 auto;
+  margin: 0 auto;
   width: 1196px;
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -1383,7 +1386,7 @@ section#ecology >ul{
   display: -ms-flexbox;
   display: flex;
   padding: 0 55px;
-  margin:0 0 165px 0;
+  margin:0 0 50px 0;
   width: 1086px;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1396,26 +1399,9 @@ section#ecology >ul >li{
   flex: 0 1 350px;
 }
 
-section#ecology >ul >li article input{
-  display: none;
-}
-
-section#ecology >ul >li article label{
-  display: block;
-  text-align: center;
-}
-
-section#ecology >ul >li article label span{
-  border-bottom: 1px solid  rgba(0, 0, 0, 0.30000000000000004);
-}
-
 section#ecology >ul >li article .content{
   display: none;
   transition: 0.4s;
-}
-
-section#ecology >ul >li article input:checked+.content{
-  display: block;
 }
 
 section#ecology >ul >li article header{
@@ -1444,6 +1430,23 @@ section#ecology >ul >li article ul{
 
 section#ecology >ul >li article li:first-letter{
   padding-left: 20px;
+}
+
+section#ecology .links{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+section#ecology .links a:link, section#ecology .links a:visited{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid  rgba(0, 0, 0, 0.30000000000000004);
+  transition: 0.4s;
+}
+
+section#ecology .links a:hover{
+  border-bottom: 1px solid  rgba(0, 0, 0, 0);
 }
 
 section#history{
