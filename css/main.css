@@ -942,6 +942,18 @@ body, html {
 
  }
 
+/*
+ @media (orientation: landscape) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+*/
+
 @media (max-width: 768px) {
   html{
     font-size: 30%;
@@ -1261,6 +1273,13 @@ section strong{
     -ms-flex: 0 1 40%;
     flex: 0 1 40%;
     margin-top: 0;
+  }
+  #header .header-content .social a{
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    background-size: cover;
+    margin-right: 5px;
   }
   #header .header-content .social .header-phone{
     width: 40px;
@@ -1794,6 +1813,10 @@ section#history article{
   background: rgba(149,61,47, 0.7);
 }
 
+section#history article img{
+  display: inline-block;
+}
+
 section#history article h2, section#history article p{
   padding: 30px 55px 65px 55px;
   font-weight: normal;
@@ -1838,9 +1861,9 @@ section#history>header h1 {
     flex-direction: column;
   }
   section#history article header{
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1855,6 +1878,15 @@ section#history>header h1 {
   }
   section#history article img{
     margin-left: 55px !important;
+    height: auto;
+    -webkit-flex: 0 1 30%;
+    -ms-flex: 0 1 30%;
+    flex: 0 1 30%;
+  }
+  section#history article h2{
+    -webkit-flex: 0 1 60%;
+    -ms-flex: 0 1 60%;
+    flex: 0 1 60%;
   }
   section#history>header {
     width: 100%;
