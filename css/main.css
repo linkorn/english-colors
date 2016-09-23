@@ -934,6 +934,18 @@ body{
 
 }
 
+@media (max-width: 768px) {
+  html{
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  html{
+    font-size: 30%;
+  }
+}
+
 @media
 (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
   html{
