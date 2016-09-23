@@ -1325,6 +1325,7 @@ section strong{
   }
   #header nav{
     position: absolute;
+    z-index: 9999;
     top: 110px;
     transition: 0s;
     height: 60px;
@@ -1549,7 +1550,7 @@ section#tips ol li:after {
   }
   section#tips ol li{
     margin: 10px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
