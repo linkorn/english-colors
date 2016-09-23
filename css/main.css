@@ -966,6 +966,13 @@ body, html {
   }
 }
 
+@media
+(-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1195px), (min-resolution: 192dpi) and (max-width: 1195px){
+  html{
+    zoom:0.5;
+  }
+}
+
 /* 1.25 dpr */
 
 @media
@@ -1324,8 +1331,9 @@ section strong{
     flex: 0 1 160px;
   }
   #header nav{
-    position: fixed;
+    position: absolute;
     z-index: 9999;
+    left: 0;
     top: 110px;
     transition: 0s;
     height: 60px;
