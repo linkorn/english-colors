@@ -934,9 +934,22 @@ body{
 
 }
 
+body, html {
+ -ms-text-size-adjust: none;
+ -moz-text-size-adjust: none;
+ -o-text-size-adjust: none;
+ -webkit-text-size-adjust: none;
+ 
+ }
+
 @media (max-width: 768px) {
   html{
-    font-size: 50%;
+    font-size: 30%;
+  }
+  p{
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
   }
 }
 
@@ -1535,7 +1548,7 @@ section#tips ol li:after {
     width: 100%;
   }
   section#tips ol li{
-    margin: 0 40px;
+    margin: 10px 40px;
   }
 }
 
@@ -1651,6 +1664,7 @@ section#ecology >ul{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   padding: 0 55px;
   margin:0 0 50px 0;
   width: 1086px;
@@ -1660,6 +1674,7 @@ section#ecology >ul{
 }
 
 section#ecology >ul >li{
+  display: inline-block;
   -webkit-flex: 0 1 350px;
   -ms-flex: 0 1 350px;
   flex: 0 1 350px;
