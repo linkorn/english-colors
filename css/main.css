@@ -904,8 +904,8 @@ textarea {
 }
 
 html {
-    font-size: 62.5%;
-    /*font-size: 10px;*/
+    /*font-size: 62.5%;*/
+    font-size: 10px;
     height: 100%;
     overflow-y: scroll;
     font-family: GothamProRegular, Arial, sans-serif;
@@ -937,7 +937,7 @@ body{
 @media
 (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
   html{
-    /*zoom:0.5;*/
+    zoom:0.5;
   }
 }
 
