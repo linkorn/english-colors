@@ -1324,7 +1324,7 @@ section strong{
     flex: 0 1 160px;
   }
   #header nav{
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     top: 110px;
     transition: 0s;
@@ -1347,7 +1347,7 @@ section strong{
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 0 30px;
   }
   #header.small{
     top: 0;
