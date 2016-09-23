@@ -929,6 +929,7 @@ body{
     max-width: 100%;
     width: 100%;
     overflow: hidden;
+    -webkit-text-size-adjust: none;
   }
 
 }
