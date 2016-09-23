@@ -939,7 +939,7 @@ body, html {
  -moz-text-size-adjust: none;
  -o-text-size-adjust: none;
  -webkit-text-size-adjust: none;
- 
+
  }
 
 @media (max-width: 768px) {
@@ -962,7 +962,7 @@ body, html {
 @media
 (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
   html{
-    zoom:0.5;
+    zoom:0.75;
   }
 }
 
@@ -1331,6 +1331,7 @@ section strong{
     height: 60px;
     padding: 40px 0;
     line-height: 2;
+    opacity: 1;
   }
   #header nav ul{
     width: 100%;
@@ -2296,13 +2297,15 @@ section#contacts .links a:hover{
 
 @media only screen and (max-width: 1195px) {
   section#contacts h1{
-    top: 100px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
+    display: none !important;/*
+      top: 100px;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      */
   }
 }
 
