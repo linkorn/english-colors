@@ -1549,6 +1549,7 @@ section#tips ol li:after {
   }
   section#tips ol li{
     margin: 10px 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1664,7 +1665,7 @@ section#ecology >ul{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  height: auto;
   padding: 0 55px;
   margin:0 0 50px 0;
   width: 1086px;
@@ -1743,9 +1744,7 @@ section#ecology .links a:hover{
   section#ecology >ul{
     width: 100%;
     padding: 0;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;/*flex-direction: column;*/
     text-align: center;
   }
   section#ecology >ul article header, section#ecology >ul article header p{
