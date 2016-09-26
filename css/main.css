@@ -1368,9 +1368,9 @@ section strong{
 @media (max-width: 400px) {
   #header .header-content  {
     width: 40%;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
-      height: 100px;
+    -ms-flex: 0 1 40%;
+        flex: 0 1 40%;
+    height: 100px;
   }
   #header .header-content .social a.instagram, #header .header-content .social a.facebook, #header .header-content .social a.vk{
     display:none;
@@ -1463,6 +1463,8 @@ section#intro .about-link:hover:before {
   section#intro .intro-wrap{
     width: 100%;
     top: 300px;
+    height:auto;
+    display:inline-block;
   }
 
   section#intro .intro-wrap .intro-content{
