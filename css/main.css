@@ -1365,6 +1365,19 @@ section strong{
 
 }
 
+@media (max-width: 400px) {
+  #header .header-content  {
+    width: 40%;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+      height: 100px;
+  }
+  #header .header-content .social a.instagram, #header .header-content .social a.facebook, #header .header-content .social a.vk{
+    display:none;
+  }  
+
+}
+
 section#intro{
   position: relative;
   background: #303939 url(../img/bg1.jpg) no-repeat;
