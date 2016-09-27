@@ -1656,8 +1656,8 @@ section#ecology{
 
 }
 
-section#ecology h1{
-  margin: 224px 0 80px 0;
+section#ecology h1{/*margin: 224px 0 80px 0;*/
+  padding:224px 0 80px 0;
   font-family: Oranienbaum, Times, serif;
   font-size: 6rem;
   line-height: 1;
@@ -2132,7 +2132,7 @@ section#interiors{
 }
 
 section#interiors h1{
-  margin: 224px 0 80px 0;
+  padding: 224px 0 80px 0;
   font-family: Oranienbaum, Times, serif;
   font-size: 6rem;
   line-height: 1;
