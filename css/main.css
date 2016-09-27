@@ -1452,7 +1452,8 @@ section#intro .about-link:before {
   bottom: -36px;
 }
 
-section#intro .about-link:hover {}
+section#intro .about-link:hover {
+  }
 
 section#intro .about-link:hover:before {
   bottom: -50px;
@@ -1462,7 +1463,7 @@ section#intro .about-link:hover:before {
 
   section#intro .intro-wrap{
     width: 100%;
-    top: 300px;
+    top: 200px;
     height:auto;
     display:inline-block;
   }
@@ -1472,6 +1473,8 @@ section#intro .about-link:hover:before {
     right: 0;
     display: block;
     text-align: center;
+    position:relative;
+    top:0;
   }
 
   section#intro .intro-wrap .intro-content br{
@@ -1561,6 +1564,20 @@ section#tips ol li:after {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  section#tips{
+    height:600px;
+  }
+  section#tips ol{
+    width: 100%;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  section#tips ol li{
+    height:auto;
+  }
+}
+
 section#beauty{
   position: relative;
   background: #303939 url(../img/bg2.jpg) no-repeat;
@@ -1632,6 +1649,7 @@ section#beauty>ul article a:hover {
   section#beauty header{
     width: 100%;
     padding-right: 0;
+    height:150px;
   }
   section#beauty header h1{
     text-align: center;
@@ -1644,6 +1662,25 @@ section#beauty>ul article a:hover {
   section#beauty>ul li {
     -ms-flex: 0 1 45%;
     flex: 0 1 45%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section#beauty header{
+    height:70px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  section#beauty{
+  }
+  section#beauty>ul {
+    display: block;
+  }
+  section#beauty>ul li {
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
     padding: 20px;
   }
 }
@@ -2008,6 +2045,32 @@ section#quality article .links a:hover{
   }
 }
 
+@media only screen and (max-width: 450px) {
+  section#quality >ol{
+    display: block;
+  }
+  section#quality >ol li{
+    padding:0;
+    height:100px;
+    padding-left:100px;
+  }
+  section#quality >ol li h2{
+    text-align: left;
+    padding-top:15px;
+  }
+  section#quality >ol li:after {
+    left: 0px;
+    margin-left: 29px;
+  }
+  section#quality article .info .images{
+    zoom:0.5;
+  }
+  section#quality article .links{
+    padding: 0 20px;
+    margin-bottom:100px;
+  }
+}
+
 section#compatibility{
   position: relative;
   background: #303939 url(../img/bg4.jpg) no-repeat;
@@ -2158,7 +2221,8 @@ section#interiors .photo span[data-pin-log="embed_user_ft"]{
   display: none;
 }
 
-section#interiors .photo>span {}
+section#interiors .photo>span {
+  }
 
 section#interiors .photo>span>span:first-child {
   display: none;
@@ -2389,6 +2453,18 @@ section#partners .footer-logo{
     display: inline-block;
     -ms-flex-item-align: center;
     align-self: center;
+  }
+}
+
+@media only screen and (max-width: 450px) { 
+   section#partners .footer-partners{
+    height:auto;
+  } 
+   section#partners .footer-partners .partners-content{
+    padding-top: 40px;
+    display:inline-block;
+    text-align: center;
+    position: relative;
   }
 }
 
